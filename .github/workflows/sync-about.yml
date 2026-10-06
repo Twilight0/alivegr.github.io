@@ -1,0 +1,32 @@
+name: Sync about page
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate about.md
+        run: |
+          curl -sL "https://raw.githubusercontent.com/Twilight0/Twilight0/master/README.md" -o /tmp/readme.md
+          printf -- '---\nlayout: default\ntitle: About Me\n---\n' > about.md
+          sed '/^<div align=\"center\">$/d; /^<\/div>$/d' /tmp/readme.md >> about.md
+
+      - name: Commit and push if changed
+        run: |
+          git add about.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name "AliveGR Bot"
+          git config user.email "contact@alivegr.app"
+          git commit -m "Sync about page from GitHub profile [skip ci]"
+          git push
