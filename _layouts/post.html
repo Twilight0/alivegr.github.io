@@ -5,7 +5,7 @@ layout: default
     <header class="post-header">
         <h2 class="post-title">{{ page.title }}</h2>
         <p class="post-meta">
-            {{ page.date | date: "%B %d, %Y" }}{% if page.author %} &middot; {{ page.author }}{% endif %}
+            {{ page.date | date: "%B %d, %Y" }}{% if page.author %} &middot; {{ page.author }}{% endif %} &middot; {% assign words = content | number_of_words %}{% if words < 180 %}1 min read{% else %}{{ words | divided_by: 180 }} min read{% endif %}
         </p>
     </header>
     <div class="post-content">
