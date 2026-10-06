@@ -1,0 +1,38 @@
+title: AliveGR
+description: >-
+  AliveGR — coming soon.
+url: "https://alivegr.app"
+baseurl: ""
+
+# Clean content URLs
+permalink: /news/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Whitelisted on GitHub Pages: RSS feed + sitemap
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Don't publish repo meta files to the live site
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - "*.gemspec"
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
