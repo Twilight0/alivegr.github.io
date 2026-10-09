@@ -32,7 +32,14 @@ defaults:
     values:
       layout: post
   - scope:
-      path: ""
+      path: "en"
       type: pages
     values:
       layout: default
+      lang: en
+  - scope:
+      path: "el"
+      type: pages
+    values:
+      layout: default
+      lang: el

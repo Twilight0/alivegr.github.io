@@ -1,8 +1,9 @@
 ---
 layout: default
+lang: en
 title: Install & FAQ
 description: How to install AliveGR on Kodi via the Twilight0 repository or direct zip, recommended setup, compatibility and frequently asked questions.
-permalink: /install/
+permalink: /en/install/
 ---
 
 <div class="post">

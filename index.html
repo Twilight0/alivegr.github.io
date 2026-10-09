@@ -1,96 +1,31 @@
 ---
 layout: default
-description: AliveGR — your one Kodi addon for everything Greek related. Live TV, movies, series, sports, music, kids and more.
+lang: en
+description: AliveGR — choose your language / επιλέξτε γλώσσα.
 ---
 
-<!-- About the addon -->
 <div class="intro-section">
-    <h2>Your one addon for everything Greek</h2>
-    <p><strong>AliveGR</strong> (stylized exactly like that) is a Kodi addon for streaming content available mostly in Greek. Live TV, radio, news and newspaper front pages, movies, TV series and shows, sports, music, kids content, documentaries, short films and more — scraped from freely available public sources across the web. The addon itself hosts nothing; it acts as a search engine over public domains.</p>
-    <p>
-        <a href="https://github.com/Twilight0/plugin.video.alivegr" target="_blank" rel="noopener noreferrer">Source Code</a> &middot;
-        <a href="https://github.com/Twilight0/repository.twilight0" target="_blank" rel="noopener noreferrer">Install via Repository</a>
-    </p>
+    <h2>Choose your language / Επιλέξτε γλώσσα</h2>
 </div>
 
-<!-- Key Features -->
-<div class="features-section">
-    <h3>Main Features</h3>
-    <div class="features-grid">
-
-        <div class="feature-card" onclick="this.classList.toggle('expanded')">
-            <span class="feature-icon"><img src="/assets/icons/gemini/monitor+gemini.png" alt="Live TV" loading="lazy"></span>
-            <div class="feature-details">
-                <div class="feature-title">Live TV <span class="toggle-arrow">▶</span></div>
-                <div class="feature-desc">Greek live TV channels, plus networks, guide data and godmode listings for non-stop viewing.</div>
-            </div>
-        </div>
-
-        <div class="feature-card" onclick="this.classList.toggle('expanded')">
-            <span class="feature-icon"><img src="/assets/icons/gemini/movies+gemini.png" alt="Movies" loading="lazy"></span>
-            <div class="feature-details">
-                <div class="feature-title">Movies <span class="toggle-arrow">▶</span></div>
-                <div class="feature-desc">On-demand movies with Greek subtitles or audio, resolved via ResolveURL and PluginsGR helpers.</div>
-            </div>
-        </div>
-
-        <div class="feature-card" onclick="this.classList.toggle('expanded')">
-            <span class="feature-icon"><img src="/assets/icons/gemini/series+gemini.png" alt="TV Series" loading="lazy"></span>
-            <div class="feature-details">
-                <div class="feature-title">TV Series &amp; Shows <span class="toggle-arrow">▶</span></div>
-                <div class="feature-desc">Greek and foreign series, TV shows and theater performances in one place.</div>
-            </div>
-        </div>
-
-        <div class="feature-card" onclick="this.classList.toggle('expanded')">
-            <span class="feature-icon"><img src="/assets/icons/gemini/basketball+gemini.png" alt="Sports" loading="lazy"></span>
-            <div class="feature-details">
-                <div class="feature-title">Sports <span class="toggle-arrow">▶</span></div>
-                <div class="feature-desc">Sports video on demand — highlights and replays to watch on your schedule.</div>
-            </div>
-        </div>
-
-        <div class="feature-card" onclick="this.classList.toggle('expanded')">
-            <span class="feature-icon"><img src="/assets/icons/gemini/music+gemini.png" alt="Music" loading="lazy"></span>
-            <div class="feature-details">
-                <div class="feature-title">Music &amp; Radio <span class="toggle-arrow">▶</span></div>
-                <div class="feature-desc">Music content plus radio stations via installable companion addons.</div>
-            </div>
-        </div>
-
-        <div class="feature-card" onclick="this.classList.toggle('expanded')">
-            <span class="feature-icon"><img src="/assets/icons/gemini/kids+gemini.png" alt="Kids" loading="lazy"></span>
-            <div class="feature-details">
-                <div class="feature-title">Kids <span class="toggle-arrow">▶</span></div>
-                <div class="feature-desc">Cartoons, kids series, kids live channels and kids songs — safe browsing for the little ones.</div>
-            </div>
-        </div>
-
-        <div class="feature-card" onclick="this.classList.toggle('expanded')">
-            <span class="feature-icon"><img src="/assets/icons/gemini/news+gemini.png" alt="News" loading="lazy"></span>
-            <div class="feature-details">
-                <div class="feature-title">News <span class="toggle-arrow">▶</span></div>
-                <div class="feature-desc">News streams and high-quality newspaper front pages, updated daily.</div>
-            </div>
-        </div>
-
-        <div class="feature-card" onclick="this.classList.toggle('expanded')">
-            <span class="feature-icon"><img src="/assets/icons/gemini/documentaries+gemini.png" alt="Documentaries" loading="lazy"></span>
-            <div class="feature-details">
-                <div class="feature-title">Documentaries &amp; Educational <span class="toggle-arrow">▶</span></div>
-                <div class="feature-desc">Documentaries and educational content for curious minds of all ages.</div>
-            </div>
-        </div>
-
-        <div class="feature-card" onclick="this.classList.toggle('expanded')">
-            <span class="feature-icon"><img src="/assets/icons/gemini/bookmarks+gemini.png" alt="Customization and operability" loading="lazy"></span>
-            <div class="feature-details">
-                <div class="feature-title">Customization &amp; Operability <span class="toggle-arrow">▶</span></div>
-                <div class="feature-desc">History, bookmarks, switchable themes, resolver plugins and full Kodi community support — on any platform.</div>
-            </div>
-        </div>
-
-
-
-    </div>
+<div class="lang-gateway">
+    <a class="lang-card" href="/en/">
+        <h2>English</h2>
+        <p>Continue to the English version of the AliveGR site.</p>
+    </a>
+    <a class="lang-card" href="/el/">
+        <h2>Ελληνικά</h2>
+        <p>Συνεχίστε στην ελληνική έκδοση του ιστότοπου AliveGR.</p>
+    </a>
 </div>
+
+<script>
+(function () {
+    try {
+        if (window.location.pathname !== '/') return;
+        var pref = (navigator.language || 'en').toLowerCase();
+        if (pref.indexOf('el') === 0) window.location.replace('/el/');
+        else window.location.replace('/en/');
+    } catch (e) { /* stay on gateway */ }
+})();
+</script>

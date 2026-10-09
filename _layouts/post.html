@@ -5,7 +5,7 @@ layout: default
     <header class="post-header">
         <h2 class="post-title">{{ page.title }}</h2>
         <p class="post-meta">
-            {{ page.date | date: "%B %d, %Y" }}{% if page.author %} &middot; {{ page.author }}{% endif %} &middot; {% assign words = content | number_of_words %}{% if words < 180 %}1 min read{% else %}{{ words | divided_by: 180 }} min read{% endif %}
+            {{ page.date | date: "%B %d, %Y" }}{% if page.author %} &middot; {{ page.author }}{% endif %} &middot; {% assign words = content | number_of_words %}{% if page.lang == 'el' %}{% if words < 180 %}1 λεπτό ανάγνωσης{% else %}{{ words | divided_by: 180 }} λεπτά ανάγνωσης{% endif %}{% else %}{% if words < 180 %}1 min read{% else %}{{ words | divided_by: 180 }} min read{% endif %}{% endif %}
         </p>
     </header>
     <div class="post-content">
@@ -13,14 +13,22 @@ layout: default
     </div>
 
     <div class="share-buttons">
+        {% if page.lang == 'el' %}
+        <span class="share-label">Κοινοποιήστε αυτό το άρθρο:</span>
+        {% else %}
         <span class="share-label">Share this post:</span>
+        {% endif %}
         <a class="share-btn share-twitter" href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | urlencode }}&text={{ page.title | urlencode }}" target="_blank" rel="noopener noreferrer">Twitter</a>
         <a class="share-btn share-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | urlencode }}" target="_blank" rel="noopener noreferrer">Facebook</a>
         <a class="share-btn share-reddit" href="https://reddit.com/submit?url={{ page.url | absolute_url | urlencode }}&title={{ page.title | urlencode }}" target="_blank" rel="noopener noreferrer">Reddit</a>
         <a class="share-btn share-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | urlencode }}&title={{ page.title | urlencode }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
 
-    <p class="post-back"><a href="/news/">&larr; Back to News</a></p>
+    {% if page.lang == 'el' %}
+    <p class="post-back"><a href="/el/news/">&larr; Επιστροφή στα Νέα</a></p>
+    {% else %}
+    <p class="post-back"><a href="/en/news/">&larr; Back to News</a></p>
+    {% endif %}
 
     <!-- Comments disabled until content exists -->
 </article>

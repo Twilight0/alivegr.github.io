@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -623,6 +623,49 @@
             margin: 0.6rem 0 0;
         }
 
+        /* Language switcher + gateway */
+        .lang-switch {
+            display: inline-flex;
+            gap: 0.25rem;
+            align-items: center;
+            border: 1px solid var(--grid-line);
+            border-radius: 6px;
+            padding: 0.25rem 0.5rem;
+        }
+        .lang-switch a.active {
+            color: var(--header-text);
+            font-weight: 600;
+        }
+        .lang-gateway {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+        .lang-card {
+            background-color: var(--secondary-bg);
+            border: 1px solid var(--grid-line);
+            border-radius: 12px;
+            padding: 2rem;
+            text-decoration: none;
+            display: block;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .lang-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-blue);
+            text-decoration: none;
+        }
+        .lang-card h2 {
+            color: var(--header-text);
+            margin: 0 0 0.5rem;
+        }
+        .lang-card p {
+            color: #8b949e;
+            margin: 0;
+        }
+
         @media (max-width: 600px) {
             .site-nav {
                 flex-wrap: wrap;
@@ -642,16 +685,37 @@
     <div class="container">
         <!-- Logo & Header -->
         <div class="header-section">
-            <a href="/" class="logo-link"><img src="/assets/alivegr/icon.png" alt="AliveGR Logo" class="logo"></a>
+            {% assign cur_lang = page.lang | default: 'en' %}
+            <a href="/{{ cur_lang }}/" class="logo-link"><img src="/assets/alivegr/icon.png" alt="AliveGR Logo" class="logo"></a>
             <h1>{{ site.title }}</h1>
+            {% if cur_lang == 'el' %}
+            <p class="tagline">AliveGR — ένα πρόσθετο Kodi για όλα τα ελληνικά: ζωντανή τηλεόραση, ταινίες, σειρές, αθλητικά, μουσική, παιδικά και άλλα.</p>
+            {% else %}
             <p class="tagline">{{ site.description }}</p>
+            {% endif %}
+            {% if cur_lang == 'el' %}
+                {% if page.url == '/' %}{% assign alt_url = '/en/' %}{% else %}{% assign alt_url = page.url | replace_first: '/el/', '/en/' %}{% endif %}
+            {% else %}
+                {% if page.url == '/' %}{% assign alt_url = '/el/' %}{% else %}{% assign alt_url = page.url | replace_first: '/en/', '/el/' %}{% endif %}
+            {% endif %}
             <nav class="site-nav">
-                <a href="/">Home</a> |
-                <a href="/install/">Install & FAQ</a> |
-                <a href="/news/">News</a> |
+                {% if cur_lang == 'el' %}
+                <a href="/el/">Αρχική</a> |
+                <a href="/el/install/">Εγκατάσταση & FAQ</a> |
+                <a href="/el/news/">Νέα</a> |
+                <a href="https://github.com/Twilight0/repository.twilight0" target="_blank" rel="noopener noreferrer">Αποθετήριο</a> |
+                <a href="https://github.com/Twilight0/plugin.video.alivegr/discussions" target="_blank" rel="noopener noreferrer">Φόρουμ</a> |
+                <a href="/el/about/">Σχετικά</a> |
+                <span class="lang-switch"><a href="{{ alt_url }}">EN</a> / <a href="{{ page.url }}" class="active">ΕΛ</a></span>
+                {% else %}
+                <a href="/en/">Home</a> |
+                <a href="/en/install/">Install & FAQ</a> |
+                <a href="/en/news/">News</a> |
                 <a href="https://github.com/Twilight0/repository.twilight0" target="_blank" rel="noopener noreferrer">Repository</a> |
                 <a href="https://github.com/Twilight0/plugin.video.alivegr/discussions" target="_blank" rel="noopener noreferrer">Forum</a> |
-                <a href="/about/">About</a>
+                <a href="/en/about/">About</a> |
+                <span class="lang-switch"><a href="{{ page.url }}" class="active">EN</a> / <a href="{{ alt_url }}">ΕΛ</a></span>
+                {% endif %}
             </nav>
         </div>
 
@@ -661,15 +725,28 @@
         <footer>
             <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
             <p>
-                <a href="/">Home</a> |
-                <a href="/install/">Install & FAQ</a> |
-                <a href="/news/">News</a> |
+                {% if cur_lang == 'el' %}
+                <a href="/el/">Αρχική</a> |
+                <a href="/el/install/">Εγκατάσταση & FAQ</a> |
+                <a href="/el/news/">Νέα</a> |
+                <a href="https://github.com/Twilight0/repository.twilight0" target="_blank" rel="noopener noreferrer">Αποθετήριο</a> |
+                <a href="https://github.com/Twilight0/plugin.video.alivegr/discussions" target="_blank" rel="noopener noreferrer">Φόρουμ</a> |
+                <a href="/el/about/">Σχετικά</a>
+                {% else %}
+                <a href="/en/">Home</a> |
+                <a href="/en/install/">Install & FAQ</a> |
+                <a href="/en/news/">News</a> |
                 <a href="https://github.com/Twilight0/repository.twilight0" target="_blank" rel="noopener noreferrer">Repository</a> |
                 <a href="https://github.com/Twilight0/plugin.video.alivegr/discussions" target="_blank" rel="noopener noreferrer">Forum</a> |
-                <a href="/about/">About</a>
+                <a href="/en/about/">About</a>
+                {% endif %}
             </p>
             <p class="contact">
+                {% if cur_lang == 'el' %}
+                <span class="contact-label">Χορηγίες &amp; επαγγελματικά:</span>
+                {% else %}
                 <span class="contact-label">Sponsorships &amp; business:</span>
+                {% endif %}
                 <a id="contact-email" class="contact-email">contact [at] alivegr [dot] app</a>
             </p>
         </footer>

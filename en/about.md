@@ -1,6 +1,8 @@
 ---
 layout: default
+lang: en
 title: About Me
+permalink: /en/about/
 ---
 
 # 👋 Hello, I'm Twilight0!

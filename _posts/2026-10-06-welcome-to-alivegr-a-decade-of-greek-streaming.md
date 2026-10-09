@@ -1,8 +1,10 @@
 ---
 layout: post
+lang: en
 title: "Welcome to AliveGR: Ten Years of Greek Streaming, Stubbornness, and Sleepless Nights"
 date: 2026-10-06 10:00:00 +0000
 author: Twilight0
+permalink: /en/news/welcome-to-alivegr-a-decade-of-greek-streaming/
 ---
 
 Welcome. Sit down, grab a coffee — a proper Greek one, not that dishwater they serve tourists — because this story is ten years long and I am going to tell it the way it actually happened.
