@@ -623,18 +623,37 @@
             margin: 0.6rem 0 0;
         }
 
-        /* Language switcher + gateway */
-        .lang-switch {
+        /* Language switcher (fixed top-left) */
+        .lang-switch-top {
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 10;
             display: inline-flex;
-            gap: 0.25rem;
+            gap: 0.4rem;
             align-items: center;
+            background-color: var(--secondary-bg);
             border: 1px solid var(--grid-line);
-            border-radius: 6px;
-            padding: 0.25rem 0.5rem;
+            border-radius: 8px;
+            padding: 0.35rem 0.7rem;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.85rem;
         }
-        .lang-switch a.active {
+        .lang-switch-top a {
+            color: var(--footer-text);
+            text-decoration: none;
+            padding: 0;
+        }
+        .lang-switch-top a:hover {
+            color: var(--header-text);
+            background: none;
+        }
+        .lang-switch-top a.active {
             color: var(--header-text);
             font-weight: 600;
+        }
+        .lang-switch-top .lang-sep {
+            color: var(--grid-line);
         }
         .lang-gateway {
             display: grid;
@@ -683,20 +702,27 @@
 </head>
 <body>
     <div class="container">
+        {% assign cur_lang = page.lang | default: 'en' %}
+        {% if cur_lang == 'el' %}
+            {% if page.url == '/' %}{% assign alt_url = '/en/' %}{% else %}{% assign alt_url = page.url | replace_first: '/el/', '/en/' %}{% endif %}
+        {% else %}
+            {% if page.url == '/' %}{% assign alt_url = '/el/' %}{% else %}{% assign alt_url = page.url | replace_first: '/en/', '/el/' %}{% endif %}
+        {% endif %}
+        <div class="lang-switch-top">
+            {% if cur_lang == 'el' %}
+            <a href="{{ alt_url }}" title="English">🇬🇧 EN</a><span class="lang-sep">|</span><a href="{{ page.url }}" class="active" title="Ελληνικά">🇬🇷 ΕΛ</a>
+            {% else %}
+            <a href="{{ page.url }}" class="active" title="English">🇬🇧 EN</a><span class="lang-sep">|</span><a href="{{ alt_url }}" title="Ελληνικά">🇬🇷 ΕΛ</a>
+            {% endif %}
+        </div>
         <!-- Logo & Header -->
         <div class="header-section">
-            {% assign cur_lang = page.lang | default: 'en' %}
             <a href="/{{ cur_lang }}/" class="logo-link"><img src="/assets/alivegr/icon.png" alt="AliveGR Logo" class="logo"></a>
             <h1>{{ site.title }}</h1>
             {% if cur_lang == 'el' %}
             <p class="tagline">AliveGR — ένα πρόσθετο Kodi για όλο το ελληνικό περιεχόμενο: ζωντανή τηλεόραση, ταινίες, σειρές, αθλητικά, μουσική, παιδικά και άλλα.</p>
             {% else %}
             <p class="tagline">{{ site.description }}</p>
-            {% endif %}
-            {% if cur_lang == 'el' %}
-                {% if page.url == '/' %}{% assign alt_url = '/en/' %}{% else %}{% assign alt_url = page.url | replace_first: '/el/', '/en/' %}{% endif %}
-            {% else %}
-                {% if page.url == '/' %}{% assign alt_url = '/el/' %}{% else %}{% assign alt_url = page.url | replace_first: '/en/', '/el/' %}{% endif %}
             {% endif %}
             <nav class="site-nav">
                 {% if cur_lang == 'el' %}
@@ -705,16 +731,14 @@
                 <a href="/el/news/">Νέα</a> |
                 <a href="https://github.com/Twilight0/repository.twilight0" target="_blank" rel="noopener noreferrer">Αποθετήριο</a> |
                 <a href="https://github.com/Twilight0/plugin.video.alivegr/discussions" target="_blank" rel="noopener noreferrer">Φόρουμ</a> |
-                <a href="/el/about/">Σχετικά</a> |
-                <span class="lang-switch"><a href="{{ alt_url }}">EN</a> / <a href="{{ page.url }}" class="active">ΕΛ</a></span>
+                <a href="/el/about/">Σχετικά</a>
                 {% else %}
                 <a href="/en/">Home</a> |
                 <a href="/en/install/">Install & FAQ</a> |
                 <a href="/en/news/">News</a> |
                 <a href="https://github.com/Twilight0/repository.twilight0" target="_blank" rel="noopener noreferrer">Repository</a> |
                 <a href="https://github.com/Twilight0/plugin.video.alivegr/discussions" target="_blank" rel="noopener noreferrer">Forum</a> |
-                <a href="/en/about/">About</a> |
-                <span class="lang-switch"><a href="{{ page.url }}" class="active">EN</a> / <a href="{{ alt_url }}">ΕΛ</a></span>
+                <a href="/en/about/">About</a>
                 {% endif %}
             </nav>
         </div>

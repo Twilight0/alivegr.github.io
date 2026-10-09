@@ -5,29 +5,39 @@ title: Σχετικά
 permalink: /el/about/
 ---
 
-# 👋 Γεια σας, είμαι ο Twilight0!
+<div class="post">
+<div class="post-content" markdown="1">
 
-### 🛠️ Δημιουργός του [AliveOS](https://github.com/Twilight0/aliveos "AliveOS") & Προγραμματιστής Ανοικτού Κώδικα 🌍
+## Σχετικά
 
-Αυτή η σελίδα είναι η ελληνική εκδοχή της σελίδας [About](/en/about/). Το πλήρες προφίλ (στα αγγλικά) συγχρονίζεται αυτόματα από το GitHub προφίλ.
+Ο Twilight0 αναπτύσσει πρόσθετα Kodi ανοικτού κώδικα με έμφαση στο ελληνικό περιεχόμενο. Όλα τα παρακάτω διανέμονται και ενημερώνονται μέσω του [Αποθετηρίου Twilight0](https://github.com/Twilight0/repository.twilight0) για Kodi 20 (Nexus) και 21 (Omega). Τρία στοιχεία αποτελούν τον πυρήνα της δουλειάς:
+
+### 📺 AliveGR
+
+Το ναυαρχίδα πρόσθετο βίντεο — ένα πρόσθετο για όλο το ελληνικό περιεχόμενο: ζωντανή τηλεόραση, ταινίες, σειρές, αθλητικά, μουσική, ραδιόφωνο, ειδήσεις, παιδικά και ντοκιμαντέρ, από ελεύθερα διαθέσιμες δημόσιες πηγές. Δεν φιλοξενεί τίποτα· λειτουργεί αυστηρά ως κατάλογος και πελάτης αναζήτησης.
+
+* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.alivegr](https://github.com/Twilight0/plugin.video.alivegr)
+* Εγκατάσταση: [Αποθετήριο Twilight0](https://github.com/Twilight0/repository.twilight0) → Πρόσθετα βίντεο → AliveGR (δείτε τον οδηγό [Εγκατάσταση & FAQ](/el/install/))
+
+### 🔌 PluginsGR
+
+Το πακέτο επιλυτών που τροφοδοτεί την ελληνική αναπαραγωγή: ειδικοί επιλυτές για επίσημες ελληνικές πλατφόρμες μετάδοσης, ως συμπλήρωμα του ResolveURL, ώστε οι ροές να εξάγονται γρήγορα και απευθείας, χωρίς ενδιάμεσους proxy.
+
+* Πηγαίος κώδικας: [github.com/Twilight0/script.module.resolveurl.pluginsgr](https://github.com/Twilight0/script.module.resolveurl.pluginsgr)
+* Εγκαθίσταται αυτόματα ως εξάρτηση του AliveGR μέσω του αποθετηρίου
+
+### 💬 Subtitles.gr
+
+Ο ειδικός πάροχος ελληνικών υποτίτλων για το Kodi (v4.0.0): Subs4Free, GreekSubs.net, YIFI, TVsubtitles.net και Moviesubtitles.org, με αντιστοίχιση IMDb ID — plus συνοδευτικό καθολικό μενού περιβάλλοντος (`context.subtitles.gr`) για λήψη υποτίτλων με ένα κλικ από οποιοδήποτε στοιχείο βιβλιοθήκης.
+
+* Πηγαίος κώδικας: [github.com/Twilight0/service.subtitles.subtitles.gr](https://github.com/Twilight0/service.subtitles.subtitles.gr) · Συνοδευτικό: [github.com/Twilight0/context.subtitles.gr](https://github.com/Twilight0/context.subtitles.gr)
 
 ---
 
-### 🚀 Σχετικά με εμένα
+* **Συζητήσεις, αναφορές σφαλμάτων & αιτήματα:** [GitHub Discussions](https://github.com/Twilight0/plugin.video.alivegr/discussions)
+* **Στηρίξτε τη δουλειά:** [Ko-fi](https://ko-fi.com/D1D11UQ0IO) · [PayPal](https://www.paypal.me/AliveGR) · [Patreon](https://www.patreon.com/twilight0)
 
-Είμαι προγραμματιστής με έμφαση στο οικοσύστημα Python, την παραμετροποίηση του Linux desktop και την ελληνική κοινότητα ανοικτού κώδικα. Αυτή την περίοδο χτίζω το **AliveOS** — μια μινιμαλιστική, βασισμένη σε Arch, βελτιστοποιημένη για προγραμματιστές διανομή Linux.
+> **Αποποίηση ευθύνης:** Κανένα από αυτά τα πρόσθετα δεν φιλοξενεί, δεν μεταδίδει ούτε διανέμει περιεχόμενο. Όλοι οι σύνδεσμοι αναλύονται από δημόσια διαθέσιμους ιστότοπους στο διαδίκτυο.
 
-* **🐧 Τώρα χτίζω:** [**AliveOS**](https://github.com/Twilight0/aliveos) — καθαρή διανομή χωρίς bloat, με Arch & Garuda και προσαρμοσμένο Cinnamon desktop.
-* **🔌 Παλαιότερη δουλειά:** Βαθιές ρίζες στην ανάπτυξη προσθέτων **Kodi** ([**AliveGR**](https://github.com/Twilight0/plugin.video.alivegr)) και **ResolveURL**.
-* **🌐 Τοπικοποίηση:** Μεταφραστής για **Kodi**, **ResolveURL** και το **YouTube Addon**.
-
----
-
-### 💖 Στηρίξτε τη διαδρομή
-
-Η δημιουργία λογισμικού και η συντήρηση μεταφράσεων θέλουν χρόνο και καφεΐνη. Αν χρησιμοποιείτε τα εργαλεία ή τις μεταφράσεις μου, στηρίξτε τη δουλειά!
-
-| **Πλατφόρμα** | **Σύνδεσμος** |
-| :--- | :--- |
-| **Ko-fi** | [Στήριξη στο Ko-fi](https://ko-fi.com/alivegr_twilight0) |
-| **PayPal** | [Στήριξη στο PayPal](https://paypal.me/AliveGR) |
+</div>
+</div>
