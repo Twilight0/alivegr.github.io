@@ -30,5 +30,26 @@ layout: default
     <p class="post-back"><a href="/en/news/">&larr; Back to News</a></p>
     {% endif %}
 
-    <!-- Comments disabled until content exists -->
+    <div class="post-comments">
+        {% if page.lang == 'el' %}
+        <span class="share-label">Σχόλια:</span>
+        {% else %}
+        <span class="share-label">Comments:</span>
+        {% endif %}
+        <script src="https://giscus.app/client.js"
+                data-repo="Twilight0/plugin.video.alivegr"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkyNzYzMDA4Njg="
+                data-category="Off topic (more or less)"
+                data-category-id="DIC_kwDOEHgERM4C6iqG"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="bottom"
+                data-theme="dark_dimmed"
+                data-lang="{{ page.lang | default: 'en' }}"
+                crossorigin="anonymous"
+                async>
+        </script>
+    </div>
 </article>
