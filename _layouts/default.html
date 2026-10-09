@@ -592,6 +592,37 @@
             content: "↗ ";
         }
 
+        /* Install & FAQ page */
+        .install-toc {
+            background-color: var(--secondary-bg);
+            border: 1px solid var(--grid-line);
+            border-radius: 8px;
+            padding: 0.8rem 1rem;
+            margin: 0 0 1.5rem;
+            font-size: 0.9rem;
+        }
+        .install-toc a {
+            white-space: nowrap;
+        }
+        details.faq {
+            background-color: var(--secondary-bg);
+            border: 1px solid var(--grid-line);
+            border-radius: 8px;
+            padding: 0.8rem 1rem;
+            margin: 0 0 0.7rem;
+        }
+        details.faq summary {
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--header-text);
+        }
+        details.faq summary:hover {
+            color: var(--accent-blue);
+        }
+        details.faq p, details.faq ul {
+            margin: 0.6rem 0 0;
+        }
+
         @media (max-width: 600px) {
             .site-nav {
                 flex-wrap: wrap;
@@ -616,6 +647,7 @@
             <p class="tagline">{{ site.description }}</p>
             <nav class="site-nav">
                 <a href="/">Home</a> |
+                <a href="/install/">Install & FAQ</a> |
                 <a href="/news/">News</a> |
                 <a href="https://github.com/Twilight0/repository.twilight0" target="_blank" rel="noopener noreferrer">Repository</a> |
                 <a href="https://github.com/Twilight0/plugin.video.alivegr/discussions" target="_blank" rel="noopener noreferrer">Forum</a> |
@@ -630,6 +662,7 @@
             <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
             <p>
                 <a href="/">Home</a> |
+                <a href="/install/">Install & FAQ</a> |
                 <a href="/news/">News</a> |
                 <a href="https://github.com/Twilight0/repository.twilight0" target="_blank" rel="noopener noreferrer">Repository</a> |
                 <a href="https://github.com/Twilight0/plugin.video.alivegr/discussions" target="_blank" rel="noopener noreferrer">Forum</a> |
