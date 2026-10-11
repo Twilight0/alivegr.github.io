@@ -19,7 +19,24 @@ Everything in one place: installation (taken from the [plugin.video.alivegr READ
 
 ## Installation
 
-### Method 1: Via Twilight0 Repository (Recommended)
+### Method 1: Via the scripted installer (Fastest)
+
+One zip installs everything in a single go — repository, dependencies and addons:
+
+1. In Kodi, navigate to **Settings** (gear icon) → **File Manager** → **Add source**.
+2. Select `<None>` and enter the following URL:
+   ```text
+   https://alivegr.app/master/
+   ```
+3. Enter a name for the media source (e.g. `AliveGR Files`) and click **OK**.
+4. Go back to Kodi's home screen, click **Add-ons** → **Add-on browser** (open box icon at top left).
+5. Select **Install from zip file** (enable *Unknown sources* in Kodi settings if prompted).
+6. Select `AliveGR Files` and click the `script.twilight0.installer-*.zip` file.
+7. The installer launches automatically and sets up the Twilight0 Repository plus AliveGR.
+
+Re-run it any time from **Programs** → **Scripted addon installer** to choose a different setup: repositories + AliveGR (default), repositories + Dev ToolBox, or browse and install any other Twilight0 addon from the catalog.
+
+### Method 2: Via Twilight0 Repository (Recommended)
 
 Installing via the repository ensures all dependencies, resolvers, and future updates are installed automatically:
 
@@ -34,13 +51,14 @@ Installing via the repository ensures all dependencies, resolvers, and future up
 6. Select `Twilight0 Repo` and click `repository.twilight0-2.0.zip`.
 7. Once the repository is installed, select **Install from repository** → **Twilight0 Repository** → **Video add-ons** → **AliveGR** → **Install**.
 
-### Method 2: Direct Zip Download
+### Method 3: Direct Zip Download
 
 You can also download the repository ZIP file directly:
 
 * Repository ZIP: [repository.twilight0.zip](https://raw.githubusercontent.com/Twilight0/repository.twilight0/gh-pages/repository.twilight0.zip)
+* Scripted installer ZIP: [script.twilight0.installer](https://alivegr.app/master/) (pick the versioned file from the listing)
 
-After downloading, in Kodi go to **Add-ons** → **Add-on browser** → **Install from zip file** and select the downloaded file, then continue from step 7 above.
+After downloading, in Kodi go to **Add-ons** → **Add-on browser** → **Install from zip file** and select the downloaded file. For the repository zip, continue from step 7 of Method 2 above; the installer zip launches on its own.
 
 ## Recommended configuration
 
@@ -62,9 +80,15 @@ For the best streaming experience:
 ## FAQ
 
 <details class="faq" markdown="1">
+<summary markdown="span">What does the scripted installer do?</summary>
+
+It bootstraps everything in one action: installs the Twilight0 repositories, resolves all dependencies, then installs and activates your pick — AliveGR (default setup), Dev ToolBox, or any other Twilight0 addon via the interactive catalog browser. Re-run it from **Programs** whenever you want to add more.
+</details>
+
+<details class="faq" markdown="1">
 <summary markdown="span">Which install method should I use?</summary>
 
-Use **Method 1 (repository)**. It pulls in all dependencies and keeps AliveGR updated automatically. Use the direct zip only if you cannot add a file source in Kodi.
+Use **Method 1 (scripted installer)** for the fastest path — one zip, everything handled. Use **Method 2 (repository)** if you prefer full manual control. Use the direct zip only if you cannot add a file source in Kodi.
 </details>
 
 <details class="faq" markdown="1">

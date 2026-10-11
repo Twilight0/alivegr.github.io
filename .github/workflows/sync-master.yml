@@ -1,0 +1,83 @@
+name: Sync master file hosting
+
+# Keeps alivegr.app/master/ fresh: rebuilds the scripted installer zip
+# from latest source and mirrors the repository zip, then regenerates
+# the Kodi-browsable index. No Jekyll involved: plain files.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 4 * * 0'  # weekly, Sunday 04:00 UTC
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Refresh hosted zips and index
+        run: |
+          set -e
+          mkdir -p master
+          rm -rf /tmp/si && mkdir -p /tmp/si
+          curl -sL "https://github.com/Twilight0/script.twilight0.installer/archive/refs/heads/master.tar.gz" -o /tmp/si/src.tar.gz
+          tar xzf /tmp/si/src.tar.gz -C /tmp/si
+          SRC=$(echo /tmp/si/script.twilight0.installer-*/)
+          VER=$(grep -o 'version="[^"]*"' "$SRC/addon.xml" | head -1 | cut -d'"' -f2)
+          rm -f master/script.twilight0.installer-*.zip
+          (cd "$SRC" && zip -qr "$GITHUB_WORKSPACE/master/script.twilight0.installer-$VER.zip" addon.xml installer.py main.py service.py icon.png fanart.jpg)
+          curl -sL "https://raw.githubusercontent.com/Twilight0/repository.twilight0/gh-pages/repository.twilight0.zip" -o master/repository.twilight0.zip
+          python3 - "$GITHUB_WORKSPACE/master" <<'EOF'
+          import os, sys
+          d = sys.argv[1]
+          def kb(name):
+              return os.path.getsize(os.path.join(d, name)) // 1024
+          files = sorted(f for f in os.listdir(d) if f.endswith('.zip'))
+          items = []
+          for f in files:
+              if f.startswith('script.twilight0.installer'):
+                  desc = 'scripted installer: repository + AliveGR / Dev ToolBox in one go'
+              elif f.startswith('repository.twilight0'):
+                  desc = 'Twilight0 repository'
+              else:
+                  desc = ''
+              items.append(f'<li><a href="{f}">{f}</a> <span class="size">({kb(f)} KB)</span> — {desc}</li>')
+          html = """<!DOCTYPE html>
+          <html lang="en">
+          <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>AliveGR file hosting</title>
+          <style>
+          body { font-family: monospace; background: #0d1117; color: #c9d1d9; margin: 2rem; }
+          h1 { font-size: 1.2rem; }
+          a { color: #58a6ff; }
+          li { margin: 0.5rem 0; }
+          .size { color: #8b949e; }
+          </style>
+          </head>
+          <body>
+          <h1>AliveGR file hosting</h1>
+          <p>Add <strong>https://alivegr.app/master/</strong> as a Kodi file source, then install from zip:</p>
+          <ul>
+          """ + "\n".join(items) + """
+          </ul>
+          </body>
+          </html>
+          """
+          with open(os.path.join(d, 'index.html'), 'w') as fh:
+              fh.write(html)
+          EOF
+
+      - name: Commit and push if changed
+        run: |
+          git add master
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name "AliveGR Bot"
+          git config user.email "contact@alivegr.app"
+          git commit -m "Sync master file hosting [skip ci]"
+          git push
