@@ -25,6 +25,18 @@ A privacy-first YouTube client for Kodi, following the NewPipe concept: no accou
 
 * Source: [github.com/Twilight0/plugin.video.newpipe](https://github.com/Twilight0/plugin.video.newpipe)
 
+### 📡 ERTFLIX
+
+A dedicated addon for [ERTFLIX](https://www.ertflix.gr) — the on-demand platform of ERT, the Greek public broadcaster: series, movies, documentaries, kids content and the live ERT channels, straight from the official source.
+
+* Source: [github.com/Twilight0/plugin.video.ert.gr](https://github.com/Twilight0/plugin.video.ert.gr)
+
+### 👗 Fashion TV
+
+A dedicated addon for FashionTV: runway shows, backstage footage, models and trends, plus the live broadcast — fashion television around the clock.
+
+* Source: [github.com/Twilight0/plugin.video.fashiontv.com](https://github.com/Twilight0/plugin.video.fashiontv.com)
+
 ### 🔌 PluginsGR
 
 The resolver pack that powers Greek playback: dedicated resolvers for official Greek broadcast portals, complementing ResolveURL so streams extract fast and directly, without proxy overhead.

@@ -25,6 +25,18 @@ permalink: /el/about/
 
 * Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.newpipe](https://github.com/Twilight0/plugin.video.newpipe)
 
+### 📡 ERTFLIX
+
+Ένα ειδικό πρόσθετο για το [ERTFLIX](https://www.ertflix.gr) — την on-demand πλατφόρμα της ΕΡΤ, της ελληνικής δημόσιας τηλεόρασης: σειρές, ταινίες, ντοκιμαντέρ, παιδικά και τα ζωντανά κανάλια της ΕΡΤ, κατευθείαν από την επίσημη πηγή.
+
+* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.ert.gr](https://github.com/Twilight0/plugin.video.ert.gr)
+
+### 👗 Fashion TV
+
+Ένα ειδικό πρόσθετο για το FashionTV: επιδείξεις μόδας, παρασκήνια, μοντέλα και τάσεις, plus η ζωντανή μετάδοση — τηλεόραση μόδας όλο το εικοσιτετράωρο.
+
+* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.fashiontv.com](https://github.com/Twilight0/plugin.video.fashiontv.com)
+
 ### 🔌 PluginsGR
 
 Το πακέτο επιλυτών που τροφοδοτεί την ελληνική αναπαραγωγή: ειδικοί επιλυτές για επίσημες ελληνικές πλατφόρμες μετάδοσης, ως συμπλήρωμα του ResolveURL, ώστε οι ροές να εξάγονται γρήγορα και απευθείας, χωρίς ενδιάμεσους proxy.
