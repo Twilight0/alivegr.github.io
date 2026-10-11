@@ -12,12 +12,6 @@ permalink: /en/about/
 
 Twilight0 develops open-source Kodi addons with an emphasis on Greek content. Everything below is distributed and updated through the [Twilight0 Repository](https://github.com/Twilight0/repository.twilight0) for Kodi 20 (Nexus) and 21 (Omega).
 
-### 🌷 Tulip — the backbone
-
-Every addon on this page is built on **Tulip**: a modern Kodi Python framework powering dialogs, directory listings, player controls, transliteration and much more. Its roots trace back to code by the legendary **"lambda"** — creator of Genesis and Exodus, whose work shaped an entire era of Kodi addons — carried forward and modernized for Python 3 and today's Kodi.
-
-* Source: [github.com/Twilight0/script.module.tulip](https://github.com/Twilight0/script.module.tulip)
-
 ### 📺 AliveGR
 
 The flagship video addon — one addon for everything Greek: live TV, movies, series, sports, music, radio, news, kids and documentaries, aggregated from freely available public sources. Nothing is hosted; it acts strictly as a directory and search client.
@@ -61,6 +55,12 @@ The premier Greek radio station addon, fully modernized: HTTPS streams, correct 
 Listener-supported independent internet radio, rebuilt on the modern SomaFM JSON API: direct stream resolution per station ID, real-time localized song history, and instant cache invalidation so "Now Playing" is always current.
 
 * Source: [github.com/Twilight0/plugin.audio.somafm.com](https://github.com/Twilight0/plugin.audio.somafm.com)
+
+### 🌷 Tulip — the backbone
+
+Every addon on this page is built on **Tulip**: a modern Kodi Python framework powering dialogs, directory listings, player controls, transliteration and much more. Its roots trace back to code by the legendary **"lambda"** — creator of Genesis and Exodus, whose work shaped an entire era of Kodi addons — carried forward and modernized for Python 3 and today's Kodi.
+
+* Source: [github.com/Twilight0/script.module.tulip](https://github.com/Twilight0/script.module.tulip)
 
 ---
 
