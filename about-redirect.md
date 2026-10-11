@@ -1,7 +1,7 @@
 ---
 layout: default
 lang: en
-title: About Me
+title: Addon suite
 permalink: /about/
 ---
 <meta http-equiv="refresh" content="0; url=/en/about/">

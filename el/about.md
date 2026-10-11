@@ -1,23 +1,29 @@
 ---
 layout: default
 lang: el
-title: Σχετικά
+title: Σουίτα προσθέτων
 permalink: /el/about/
 ---
 
 <div class="post">
 <div class="post-content" markdown="1">
 
-## Σχετικά
+## 🧩 Σουίτα προσθέτων
 
-Ο Twilight0 αναπτύσσει πρόσθετα Kodi ανοικτού κώδικα με έμφαση στο ελληνικό περιεχόμενο. Όλα τα παρακάτω διανέμονται και ενημερώνονται μέσω του [Αποθετηρίου Twilight0](https://github.com/Twilight0/repository.twilight0) για Kodi 20 (Nexus) και 21 (Omega). Τρία στοιχεία αποτελούν τον πυρήνα της δουλειάς:
+Ο Twilight0 αναπτύσσει πρόσθετα Kodi ανοικτού κώδικα με έμφαση στο ελληνικό περιεχόμενο. Όλα τα παρακάτω διανέμονται και ενημερώνονται μέσω του [Αποθετηρίου Twilight0](https://github.com/Twilight0/repository.twilight0) για Kodi 20 (Nexus) και 21 (Omega).
 
 ### 📺 AliveGR
 
 Το ναυαρχίδα πρόσθετο βίντεο — ένα πρόσθετο για όλο το ελληνικό περιεχόμενο: ζωντανή τηλεόραση, ταινίες, σειρές, αθλητικά, μουσική, ραδιόφωνο, ειδήσεις, παιδικά και ντοκιμαντέρ, από ελεύθερα διαθέσιμες δημόσιες πηγές. Δεν φιλοξενεί τίποτα· λειτουργεί αυστηρά ως κατάλογος και πελάτης αναζήτησης.
 
 * Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.alivegr](https://github.com/Twilight0/plugin.video.alivegr)
-* Εγκατάσταση: [Αποθετήριο Twilight0](https://github.com/Twilight0/repository.twilight0) → Πρόσθετα βίντεο → AliveGR (δείτε τον οδηγό [Εγκατάσταση & FAQ](/el/install/))
+* Εγκατάσταση: Αποθετήριο Twilight0 → Πρόσθετα βίντεο → AliveGR (δείτε τον οδηγό [Εγκατάσταση & FAQ](/el/install/))
+
+### ▶️ NewPipe
+
+Ένας YouTube client για Kodi με προτεραιότητα το απόρρητο, στην ιδέα του NewPipe: χωρίς λογαριασμό, χωρίς κλειδί API, με τοπικές μόνο συνδρομές. Δείτε, ψάξτε και εγγραφείτε χωρίς να παραδίδετε τις συνήθειές σας στη Google.
+
+* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.newpipe](https://github.com/Twilight0/plugin.video.newpipe)
 
 ### 🔌 PluginsGR
 
@@ -28,9 +34,27 @@ permalink: /el/about/
 
 ### 💬 Subtitles.gr
 
-Ο ειδικός πάροχος ελληνικών υποτίτλων για το Kodi (v4.0.0): Subs4Free, GreekSubs.net, YIFI, TVsubtitles.net και Moviesubtitles.org, με αντιστοίχιση IMDb ID — plus συνοδευτικό καθολικό μενού περιβάλλοντος (`context.subtitles.gr`) για λήψη υποτίτλων με ένα κλικ από οποιοδήποτε στοιχείο βιβλιοθήκης.
+Ο ειδικός πάροχος ελληνικών υποτίτλων για το Kodi: Subs4Free, GreekSubs.net, YIFI, TVsubtitles.net και Moviesubtitles.org με αντιστοίχιση IMDb ID — plus **ενσωματωμένη αυτόματη μετάφραση**, με τη βοήθεια του Google Translate, για υπότιτλους που δεν υπάρχουν στη γλώσσα σας. Προαιρετικοί πάροχοι SubDL και Subs4Series (μέσω `curl_cffi`), και συνοδευτικό καθολικό μενού περιβάλλοντος (`context.subtitles.gr`) για λήψη με ένα κλικ από οποιοδήποτε στοιχείο βιβλιοθήκης.
 
 * Πηγαίος κώδικας: [github.com/Twilight0/service.subtitles.subtitles.gr](https://github.com/Twilight0/service.subtitles.subtitles.gr) · Συνοδευτικό: [github.com/Twilight0/context.subtitles.gr](https://github.com/Twilight0/context.subtitles.gr)
+
+### 🧰 Dev ToolBox
+
+Ένας ελβετικός σουγιάς για προγραμματιστές Kodi και power users: βοηθήματα αποσφαλμάτωσης, ενέργειες συντήρησης και χρήσιμα εργαλεία σε ένα πρόσθετο προγραμμάτων.
+
+* Πηγαίος κώδικας: [github.com/Twilight0/plugin.program.devtoolbox](https://github.com/Twilight0/plugin.program.devtoolbox)
+
+### 📻 E-Radio.gr
+
+Το κορυφαίο πρόσθετο ελληνικών ραδιοφωνικών σταθμών, πλήρως εκσυγχρονισμένο: ροές HTTPS, σωστές ελληνικές ετικέτες, ασαφής αναζήτηση και φρέσκες λίστες σταθμών χωρίς παλιές cache.
+
+* Πηγαίος κώδικας: [github.com/Twilight0/plugin.audio.eradio.gr](https://github.com/Twilight0/plugin.audio.eradio.gr)
+
+### 🎵 SomaFM
+
+Ανεξάρτητο ιντερνετικό ραδιόφωνο με την υποστήριξη των ακροατών, ξαναχτισμένο πάνω στο σύγχρονο JSON API του SomaFM: απευθείας επίλυση ροών ανά σταθμό, τοπικοποιημένο ιστορικό τραγουδιών σε πραγματικό χρόνο, και άμεση ακύρωση cache ώστε το «Now Playing» να είναι πάντα επίκαιρο.
+
+* Πηγαίος κώδικας: [github.com/Twilight0/plugin.audio.somafm.com](https://github.com/Twilight0/plugin.audio.somafm.com)
 
 ---
 
