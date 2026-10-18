@@ -8,6 +8,9 @@ Thumbs.db
 *.swp
 *~
 
+# Tooling state
+.wrangler/
+
 # Logs
 *.log
 
