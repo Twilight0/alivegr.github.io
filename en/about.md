@@ -12,12 +12,28 @@ permalink: /en/about/
 
 Twilight0 develops open-source Kodi addons with an emphasis on Greek content. Everything below is distributed and updated through the [Twilight0 Repository](https://github.com/Twilight0/repository.twilight0) for Kodi 20 (Nexus) and 21 (Omega).
 
-### 📺 AliveGR
+### 📺 AliveGR — the flagship
 
 The flagship video addon — one addon for everything Greek: live TV, movies, series, sports, music, radio, news, kids and documentaries, aggregated from freely available public sources. Nothing is hosted; it acts strictly as a directory and search client.
 
 * Source: [github.com/Twilight0/plugin.video.alivegr](https://github.com/Twilight0/plugin.video.alivegr)
 * Install: Twilight0 Repository → Video add-ons → AliveGR (see the [Install & FAQ](/en/install/) guide)
+
+### 📡 Greek TV channel addons
+
+Dedicated addons for Greece's main television networks, each pulling live and on-demand content straight from the broadcaster's own site. Several of these were originally created by the legendary **"lambda"** — creator of Genesis and Exodus — and are now maintained and modernized here: **[MEGA](https://www.megatv.com)** ([source](https://github.com/Twilight0/plugin.video.megatv.com)) · **[Alpha](https://www.alphatv.gr)** ([source](https://github.com/Twilight0/plugin.video.alphatv.gr)) · **[ANT1](https://www.antenna.gr)** ([source](https://github.com/Twilight0/plugin.video.antenna.gr)) · **[SKAI](https://www.skai.gr)** ([source](https://github.com/Twilight0/plugin.video.skai.gr)) · **[Star](https://www.star.gr)** ([source](https://github.com/Twilight0/plugin.video.star.gr)) · **[ERTFLIX](https://www.ertflix.gr)** ([source](https://github.com/Twilight0/plugin.video.ert.gr)).
+
+### 🏐 NovaSports
+
+Live streams and on-demand footage from [NovaSports](https://www.novasports.gr) — the Greek sports broadcaster — covering its full event range, from football and basketball to motorsport.
+
+* Source: [github.com/Twilight0/plugin.video.novasports.gr](https://github.com/Twilight0/plugin.video.novasports.gr)
+
+### 👗 Fashion TV
+
+Fashion television around the clock: runway shows, backstage footage, models and trends, plus the live broadcast from [FashionTV](https://www.fashiontv.com).
+
+* Source: [github.com/Twilight0/plugin.video.fashiontv.com](https://github.com/Twilight0/plugin.video.fashiontv.com)
 
 ### ▶️ NewPipe
 
@@ -25,41 +41,9 @@ A privacy-first YouTube client for Kodi, following the NewPipe concept: no accou
 
 * Source: [github.com/Twilight0/plugin.video.newpipe](https://github.com/Twilight0/plugin.video.newpipe)
 
-### 📡 ERTFLIX
+### 🎵 Audio &amp; music addons
 
-A dedicated addon for [ERTFLIX](https://www.ertflix.gr) — the on-demand platform of ERT, the Greek public broadcaster: series, movies, documentaries, kids content and the live ERT channels, straight from the official source.
-
-* Source: [github.com/Twilight0/plugin.video.ert.gr](https://github.com/Twilight0/plugin.video.ert.gr)
-
-### 👗 Fashion TV
-
-A dedicated addon for FashionTV: runway shows, backstage footage, models and trends, plus the live broadcast — fashion television around the clock.
-
-* Source: [github.com/Twilight0/plugin.video.fashiontv.com](https://github.com/Twilight0/plugin.video.fashiontv.com)
-
-### ⭐ Star Player
-
-A dedicated addon for the Star Channel live and on-demand broadcasts. Originally created by the developer whose lineage this whole suite follows — maintained and modernized here.
-
-* Source: [github.com/Twilight0/plugin.video.star.gr](https://github.com/Twilight0/plugin.video.star.gr)
-
-### 🗞️ SKAI Player
-
-Live and on-demand content from SKAI — news, shows and documentaries. Also inherited from the same lineage, now kept current against the site's changes.
-
-* Source: [github.com/Twilight0/plugin.video.skai.gr](https://github.com/Twilight0/plugin.video.skai.gr)
-
-### 🅰️ Alpha Player
-
-Live and on-demand broadcasts from Alpha TV, maintained on the same foundations.
-
-* Source: [github.com/Twilight0/plugin.video.alphatv.gr](https://github.com/Twilight0/plugin.video.alphatv.gr)
-
-### 🏐 NovaSports
-
-Live streams and on-demand footage from NovaSports — the Greek sports broadcaster — covering its full event range.
-
-* Source: [github.com/Twilight0/plugin.video.novasports.gr](https://github.com/Twilight0/plugin.video.novasports.gr)
+Two companion addons for listening: **[E-Radio.gr](https://github.com/Twilight0/plugin.audio.eradio.gr)** — Greek radio stations with HTTPS streams, correct Greek labels, fuzzy search and fresh station lists without stale caches — and **[SomaFM](https://github.com/Twilight0/plugin.audio.somafm.com)** — listener-supported independent internet radio, rebuilt on the modern SomaFM JSON API with direct stream resolution per station ID, real-time localized song history, and instant cache invalidation so "Now Playing" is always current.
 
 ### 🔌 PluginsGR
 
@@ -79,18 +63,6 @@ The dedicated Greek subtitles provider for Kodi: Subs4Free, GreekSubs.net, YIFI,
 A Swiss army knife for Kodi developers and power users: debugging helpers, maintenance actions and handy utilities in one program addon.
 
 * Source: [github.com/Twilight0/plugin.program.devtoolbox](https://github.com/Twilight0/plugin.program.devtoolbox)
-
-### 📻 E-Radio.gr
-
-The premier Greek radio station addon, fully modernized: HTTPS streams, correct Greek labels, fuzzy search and fresh station lists without stale caches.
-
-* Source: [github.com/Twilight0/plugin.audio.eradio.gr](https://github.com/Twilight0/plugin.audio.eradio.gr)
-
-### 🎵 SomaFM
-
-Listener-supported independent internet radio, rebuilt on the modern SomaFM JSON API: direct stream resolution per station ID, real-time localized song history, and instant cache invalidation so "Now Playing" is always current.
-
-* Source: [github.com/Twilight0/plugin.audio.somafm.com](https://github.com/Twilight0/plugin.audio.somafm.com)
 
 ### 🌷 Tulip — the backbone
 

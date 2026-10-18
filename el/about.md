@@ -12,12 +12,28 @@ permalink: /el/about/
 
 Ο Twilight0 αναπτύσσει πρόσθετα Kodi ανοικτού κώδικα με έμφαση στο ελληνικό περιεχόμενο. Όλα τα παρακάτω διανέμονται και ενημερώνονται μέσω του [Αποθετηρίου Twilight0](https://github.com/Twilight0/repository.twilight0) για Kodi 20 (Nexus) και 21 (Omega).
 
-### 📺 AliveGR
+### 📺 AliveGR — το ναυαρχίδα
 
 Το ναυαρχίδα πρόσθετο βίντεο — ένα πρόσθετο για όλο το ελληνικό περιεχόμενο: ζωντανή τηλεόραση, ταινίες, σειρές, αθλητικά, μουσική, ραδιόφωνο, ειδήσεις, παιδικά και ντοκιμαντέρ, από ελεύθερα διαθέσιμες δημόσιες πηγές. Δεν φιλοξενεί τίποτα· λειτουργεί αυστηρά ως κατάλογος και πελάτης αναζήτησης.
 
 * Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.alivegr](https://github.com/Twilight0/plugin.video.alivegr)
 * Εγκατάσταση: Αποθετήριο Twilight0 → Πρόσθετα βίντεο → AliveGR (δείτε τον οδηγό [Εγκατάσταση & FAQ](/el/install/))
+
+### 📡 Πρόσθετα ελληνικών τηλεοπτικών καναλιών
+
+Ειδικά πρόσθετα για τα κύρια τηλεοπτικά δίκτυα της Ελλάδας, το καθένα αντλεί ζωντανό και on-demand περιεχόμενο απευθείας από τον ιστότοπο του ίδιου του του σταθμού. Αρκετά από αυτά δημιουργήθηκαν αρχικά από τον θρυλικό **«lambda»** — δημιουργό των Genesis και Exodus — και συντηρούνται και εκσυγχρονίζονται εδώ: **[MEGA](https://www.megatv.com)** ([πηγαίος](https://github.com/Twilight0/plugin.video.megatv.com)) · **[Alpha](https://www.alphatv.gr)** ([πηγαίος](https://github.com/Twilight0/plugin.video.alphatv.gr)) · **[ANT1](https://www.antenna.gr)** ([πηγαίος](https://github.com/Twilight0/plugin.video.antenna.gr)) · **[SKAI](https://www.skai.gr)** ([πηγαίος](https://github.com/Twilight0/plugin.video.skai.gr)) · **[Star](https://www.star.gr)** ([πηγαίος](https://github.com/Twilight0/plugin.video.star.gr)) · **[ERTFLIX](https://www.ertflix.gr)** ([πηγαίος](https://github.com/Twilight0/plugin.video.ert.gr)).
+
+### 🏐 NovaSports
+
+Ζωντανές ροές και on-demand υλικό από το [NovaSports](https://www.novasports.gr) — το ελληνικό αθλητικό δίκτυο — με κάλυψη όλου του προγράμματος του, από ποδόσφαιρο και μπάσκετ μέχρι μηχανοδρόμιο.
+
+* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.novasports.gr](https://github.com/Twilight0/plugin.video.novasports.gr)
+
+### 👗 Fashion TV
+
+Τηλεόραση μόδας όλο το εικοσιτετράωρο: επιδείξεις, παρασκήνια, μοντέλα και τάσεις, plus η ζωντανή μετάδοση από το [FashionTV](https://www.fashiontv.com).
+
+* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.fashiontv.com](https://github.com/Twilight0/plugin.video.fashiontv.com)
 
 ### ▶️ NewPipe
 
@@ -25,41 +41,9 @@ permalink: /el/about/
 
 * Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.newpipe](https://github.com/Twilight0/plugin.video.newpipe)
 
-### 📡 ERTFLIX
+### 🎵 Πρόσθετα ήχου & μουσικής
 
-Ένα ειδικό πρόσθετο για το [ERTFLIX](https://www.ertflix.gr) — την on-demand πλατφόρμα της ΕΡΤ, της ελληνικής δημόσιας τηλεόρασης: σειρές, ταινίες, ντοκιμαντέρ, παιδικά και τα ζωντανά κανάλια της ΕΡΤ, κατευθείαν από την επίσημη πηγή.
-
-* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.ert.gr](https://github.com/Twilight0/plugin.video.ert.gr)
-
-### 👗 Fashion TV
-
-Ένα ειδικό πρόσθετο για το FashionTV: επιδείξεις μόδας, παρασκήνια, μοντέλα και τάσεις, plus η ζωντανή μετάδοση — τηλεόραση μόδας όλο το εικοσιτετράωρο.
-
-* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.fashiontv.com](https://github.com/Twilight0/plugin.video.fashiontv.com)
-
-### ⭐ Star Player
-
-Ειδικό πρόσθετο για τις ζωντανές και on-demand μεταδόσεις του Star Channel. Αρχικά δημιουργήθηκε από τον προγραμματιστή του οποίου ακολουθεί όλη αυτή η σουίτα — συντηρείται και εκσυγχρονίζεται εδώ.
-
-* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.star.gr](https://github.com/Twilight0/plugin.video.star.gr)
-
-### 🗞️ SKAI Player
-
-Ζωντανό και on-demand περιεχόμενο από το SKAI — ειδήσεις, εκπομπές και ντοκιμαντέρ. Επίσης κληρονομημένο από την ίδια γραμμή, σήμερα διαρκώς ενημερωμένο.
-
-* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.skai.gr](https://github.com/Twilight0/plugin.video.skai.gr)
-
-### 🅰️ Alpha Player
-
-Ζωντανές και on-demand μεταδόσεις από την Alpha, συντηρούμενες στις ίδιες βάσεις.
-
-* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.alphatv.gr](https://github.com/Twilight0/plugin.video.alphatv.gr)
-
-### 🏐 NovaSports
-
-Ζωντανές ροές και on-demand υλικό από το NovaSports — το ελληνικό αθλητικό δίκτυο — με κάλυψη όλου του προγράμματος του.
-
-* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.novasports.gr](https://github.com/Twilight0/plugin.video.novasports.gr)
+Δύο συνοδευτικά πρόσθετα για ακρόαση: το **[E-Radio.gr](https://github.com/Twilight0/plugin.audio.eradio.gr)** — ελληνικοί ραδιοφωνικοί σταθμοί με ροές HTTPS, σωστές ελληνικές ετικέτες, ασαφής αναζήτηση και φρέσκες λίστες σταθμών χωρίς παλιές cache — και το **[SomaFM](https://github.com/Twilight0/plugin.audio.somafm.com)** — ανεξάρτητο ιντερνετικό ραδιόφωνο με την υποστήριξη των ακροατών, ξαναχτισμένο πάνω στο σύγχρονο JSON API του SomaFM με απευθείας επίλυση ροών ανά σταθμό, τοπικοποιημένο ιστορικό τραγουδιών σε πραγματικό χρόνο και άμεση ακύρωση cache ώστε το «Now Playing» να είναι πάντα επίκαιρο.
 
 ### 🔌 PluginsGR
 
@@ -79,18 +63,6 @@ permalink: /el/about/
 Ένας ελβετικός σουγιάς για προγραμματιστές Kodi και power users: βοηθήματα αποσφαλμάτωσης, ενέργειες συντήρησης και χρήσιμα εργαλεία σε ένα πρόσθετο προγραμμάτων.
 
 * Πηγαίος κώδικας: [github.com/Twilight0/plugin.program.devtoolbox](https://github.com/Twilight0/plugin.program.devtoolbox)
-
-### 📻 E-Radio.gr
-
-Το κορυφαίο πρόσθετο ελληνικών ραδιοφωνικών σταθμών, πλήρως εκσυγχρονισμένο: ροές HTTPS, σωστές ελληνικές ετικέτες, ασαφής αναζήτηση και φρέσκες λίστες σταθμών χωρίς παλιές cache.
-
-* Πηγαίος κώδικας: [github.com/Twilight0/plugin.audio.eradio.gr](https://github.com/Twilight0/plugin.audio.eradio.gr)
-
-### 🎵 SomaFM
-
-Ανεξάρτητο ιντερνετικό ραδιόφωνο με την υποστήριξη των ακροατών, ξαναχτισμένο πάνω στο σύγχρονο JSON API του SomaFM: απευθείας επίλυση ροών ανά σταθμό, τοπικοποιημένο ιστορικό τραγουδιών σε πραγματικό χρόνο, και άμεση ακύρωση cache ώστε το «Now Playing» να είναι πάντα επίκαιρο.
-
-* Πηγαίος κώδικας: [github.com/Twilight0/plugin.audio.somafm.com](https://github.com/Twilight0/plugin.audio.somafm.com)
 
 ### 🌷 Tulip — η ραχοκοκαλιά
 
