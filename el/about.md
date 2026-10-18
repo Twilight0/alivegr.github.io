@@ -1,14 +1,14 @@
 ---
 layout: default
 lang: el
-title: Σουίτα προσθέτων
+title: Έργα &amp; Σχετικά
 permalink: /el/about/
 ---
 
 <div class="post">
 <div class="post-content" markdown="1">
 
-## 🧩 Σουίτα προσθέτων
+## 🧩 Έργα &amp; Σχετικά
 
 Ο Twilight0 αναπτύσσει πρόσθετα Kodi ανοικτού κώδικα με έμφαση στο ελληνικό περιεχόμενο. Όλα τα παρακάτω διανέμονται και ενημερώνονται μέσω του [Αποθετηρίου Twilight0](https://github.com/Twilight0/repository.twilight0) για Kodi 20 (Nexus) και 21 (Omega).
 
@@ -36,6 +36,30 @@ permalink: /el/about/
 Ένα ειδικό πρόσθετο για το FashionTV: επιδείξεις μόδας, παρασκήνια, μοντέλα και τάσεις, plus η ζωντανή μετάδοση — τηλεόραση μόδας όλο το εικοσιτετράωρο.
 
 * Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.fashiontv.com](https://github.com/Twilight0/plugin.video.fashiontv.com)
+
+### ⭐ Star Player
+
+Ειδικό πρόσθετο για τις ζωντανές και on-demand μεταδόσεις του Star Channel. Αρχικά δημιουργήθηκε από τον προγραμματιστή του οποίου ακολουθεί όλη αυτή η σουίτα — συντηρείται και εκσυγχρονίζεται εδώ.
+
+* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.star.gr](https://github.com/Twilight0/plugin.video.star.gr)
+
+### 🗞️ SKAI Player
+
+Ζωντανό και on-demand περιεχόμενο από το SKAI — ειδήσεις, εκπομπές και ντοκιμαντέρ. Επίσης κληρονομημένο από την ίδια γραμμή, σήμερα διαρκώς ενημερωμένο.
+
+* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.skai.gr](https://github.com/Twilight0/plugin.video.skai.gr)
+
+### 🅰️ Alpha Player
+
+Ζωντανές και on-demand μεταδόσεις από την Alpha, συντηρούμενες στις ίδιες βάσεις.
+
+* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.alphatv.gr](https://github.com/Twilight0/plugin.video.alphatv.gr)
+
+### 🏐 NovaSports
+
+Ζωντανές ροές και on-demand υλικό από το NovaSports — το ελληνικό αθλητικό δίκτυο — με κάλυψη όλου του προγράμματος του.
+
+* Πηγαίος κώδικας: [github.com/Twilight0/plugin.video.novasports.gr](https://github.com/Twilight0/plugin.video.novasports.gr)
 
 ### 🔌 PluginsGR
 

@@ -1,14 +1,14 @@
 ---
 layout: default
 lang: en
-title: Addon suite
+title: Projects &amp; About
 permalink: /en/about/
 ---
 
 <div class="post">
 <div class="post-content" markdown="1">
 
-## 🧩 Addon suite
+## 🧩 Projects &amp; About
 
 Twilight0 develops open-source Kodi addons with an emphasis on Greek content. Everything below is distributed and updated through the [Twilight0 Repository](https://github.com/Twilight0/repository.twilight0) for Kodi 20 (Nexus) and 21 (Omega).
 
@@ -36,6 +36,30 @@ A dedicated addon for [ERTFLIX](https://www.ertflix.gr) — the on-demand platfo
 A dedicated addon for FashionTV: runway shows, backstage footage, models and trends, plus the live broadcast — fashion television around the clock.
 
 * Source: [github.com/Twilight0/plugin.video.fashiontv.com](https://github.com/Twilight0/plugin.video.fashiontv.com)
+
+### ⭐ Star Player
+
+A dedicated addon for the Star Channel live and on-demand broadcasts. Originally created by the developer whose lineage this whole suite follows — maintained and modernized here.
+
+* Source: [github.com/Twilight0/plugin.video.star.gr](https://github.com/Twilight0/plugin.video.star.gr)
+
+### 🗞️ SKAI Player
+
+Live and on-demand content from SKAI — news, shows and documentaries. Also inherited from the same lineage, now kept current against the site's changes.
+
+* Source: [github.com/Twilight0/plugin.video.skai.gr](https://github.com/Twilight0/plugin.video.skai.gr)
+
+### 🅰️ Alpha Player
+
+Live and on-demand broadcasts from Alpha TV, maintained on the same foundations.
+
+* Source: [github.com/Twilight0/plugin.video.alphatv.gr](https://github.com/Twilight0/plugin.video.alphatv.gr)
+
+### 🏐 NovaSports
+
+Live streams and on-demand footage from NovaSports — the Greek sports broadcaster — covering its full event range.
+
+* Source: [github.com/Twilight0/plugin.video.novasports.gr](https://github.com/Twilight0/plugin.video.novasports.gr)
 
 ### 🔌 PluginsGR
 
