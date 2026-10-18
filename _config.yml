@@ -7,6 +7,9 @@ baseurl: ""
 # Clean content URLs
 permalink: /news/:title/
 
+# Render posts dated later today (timezone differences vs. the build runner)
+future: true
+
 markdown: kramdown
 kramdown:
   input: GFM
