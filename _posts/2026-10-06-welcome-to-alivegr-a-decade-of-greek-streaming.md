@@ -4,6 +4,7 @@ lang: en
 title: "Welcome to AliveGR: Ten Years of Greek Streaming, Stubbornness, and Sleepless Nights"
 date: 2026-10-06 10:00:00 +0000
 author: Twilight0
+tags: [alivegr, history]
 permalink: /en/news/welcome-to-alivegr-a-decade-of-greek-streaming/
 ---
 

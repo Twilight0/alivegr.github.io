@@ -4,6 +4,7 @@ lang: el
 title: "Προς μια σουίτα δοκιμών: Ταχύτερη ανάπτυξη, ταχύτερο debugging για το AliveGR"
 date: 2026-10-10 10:00:00 +0000
 author: Twilight0
+tags: [testing, technical, alivegr]
 permalink: /el/news/alivegr-test-suite/
 ---
 

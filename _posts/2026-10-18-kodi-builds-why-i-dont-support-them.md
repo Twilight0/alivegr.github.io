@@ -4,6 +4,7 @@ lang: en
 title: "Kodi Builds: Why I Don't Support Them, and Why Trust Beats Convenience"
 date: 2026-10-18 12:00:00 +0000
 author: Twilight0
+tags: [announcements, technical]
 permalink: /en/news/kodi-builds-why-i-dont-support-them/
 ---
 

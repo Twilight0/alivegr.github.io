@@ -12,6 +12,19 @@ layout: default
         {{ content }}
     </div>
 
+    {% if page.tags and page.tags.size > 0 %}
+    <div class="post-tags">
+        <span class="tags-label">{% if page.lang == 'el' %}Ετικέτες:{% else %}Tags:{% endif %}</span>
+        {% for t in page.tags %}
+            {% for d in site.data.tags[page.lang] %}
+                {% if d.key == t %}
+                    <a class="tag-chip" href="/{{ page.lang }}/tags/{{ d.key }}/">{{ d.label }}</a>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
     <div class="share-buttons">
         {% if page.lang == 'el' %}
         <span class="share-label">Κοινοποιήστε αυτό το άρθρο:</span>

@@ -4,6 +4,7 @@ lang: el
 title: "Ενημερώσεις Αποθετηρίου Twilight0"
 date: 2026-10-09 10:00:00 +0000
 author: Twilight0
+tags: [releases, repository, announcements]
 permalink: /el/news/twilight0-repository-updates/
 ---
 

@@ -476,6 +476,60 @@
         .share-reddit:hover { border-color: #ff4500; }
         .share-linkedin:hover { border-color: #0077b5; }
 
+        /* Tags */
+        .post-tags {
+            margin-top: 1.25rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .post-tags .tags-label {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--footer-text);
+            margin-right: 0.25rem;
+        }
+        .tag-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.78rem;
+            color: var(--text-color);
+            background-color: var(--secondary-bg);
+            border: 1px solid var(--grid-line);
+            border-radius: 999px;
+            padding: 0.2rem 0.7rem;
+            text-decoration: none;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+        .tag-chip:hover {
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        .tag-n {
+            color: var(--footer-text);
+            font-size: 0.72rem;
+        }
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 1.2rem;
+        }
+        .tag-cloud .tag-chip {
+            font-size: 0.9rem;
+            padding: 0.35rem 0.9rem;
+        }
+        .tag-count {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--footer-text);
+            margin: 0 0 1.2rem;
+        }
+
         .post-comments {
             margin-top: 2rem;
             padding-top: 1rem;
@@ -729,6 +783,7 @@
                 <a href="/el/">Αρχική</a> |
                 <a href="/el/install/">Εγκατάσταση & FAQ</a> |
                 <a href="/el/news/">Νέα</a> |
+                <a href="/el/tags/">Ετικέτες</a> |
                 <a href="https://github.com/Twilight0/repository.twilight0" target="_blank" rel="noopener noreferrer">Αποθετήριο</a> |
                 <a href="https://github.com/Twilight0/plugin.video.alivegr/discussions" target="_blank" rel="noopener noreferrer">Φόρουμ</a> |
                 <a href="/el/about/">Σουίτα προσθέτων</a>
@@ -736,6 +791,7 @@
                 <a href="/en/">Home</a> |
                 <a href="/en/install/">Install & FAQ</a> |
                 <a href="/en/news/">News</a> |
+                <a href="/en/tags/">Tags</a> |
                 <a href="https://github.com/Twilight0/repository.twilight0" target="_blank" rel="noopener noreferrer">Repository</a> |
                 <a href="https://github.com/Twilight0/plugin.video.alivegr/discussions" target="_blank" rel="noopener noreferrer">Forum</a> |
                 <a href="/en/about/">Addon suite</a>
@@ -753,6 +809,7 @@
                 <a href="/el/">Αρχική</a> |
                 <a href="/el/install/">Εγκατάσταση & FAQ</a> |
                 <a href="/el/news/">Νέα</a> |
+                <a href="/el/tags/">Ετικέτες</a> |
                 <a href="https://github.com/Twilight0/repository.twilight0" target="_blank" rel="noopener noreferrer">Αποθετήριο</a> |
                 <a href="https://github.com/Twilight0/plugin.video.alivegr/discussions" target="_blank" rel="noopener noreferrer">Φόρουμ</a> |
                 <a href="/el/about/">Σουίτα προσθέτων</a>
@@ -760,6 +817,7 @@
                 <a href="/en/">Home</a> |
                 <a href="/en/install/">Install & FAQ</a> |
                 <a href="/en/news/">News</a> |
+                <a href="/en/tags/">Tags</a> |
                 <a href="https://github.com/Twilight0/repository.twilight0" target="_blank" rel="noopener noreferrer">Repository</a> |
                 <a href="https://github.com/Twilight0/plugin.video.alivegr/discussions" target="_blank" rel="noopener noreferrer">Forum</a> |
                 <a href="/en/about/">Addon suite</a>

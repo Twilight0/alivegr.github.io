@@ -4,6 +4,7 @@ lang: el
 title: "Αυτό που λύνεις μετράει, όχι το πώς το χτίζεις: Σημειώσεις για το λογισμικό στην εποχή του AI"
 date: 2026-10-13 10:00:00 +0000
 author: Twilight0
+tags: [technical, history]
 permalink: /el/news/what-you-solve-not-how-you-build/
 ---
 

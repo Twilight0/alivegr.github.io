@@ -4,6 +4,7 @@ lang: en
 title: "Subtitles.gr Under the Hood: Dead Providers, TLS Impersonation, and curl_cffi"
 date: 2026-10-09 19:00:00 +0000
 author: Twilight0
+tags: [subtitles, technical, alivegr]
 permalink: /en/news/subtitles-gr-tls-impersonation-curl-cffi/
 ---
 

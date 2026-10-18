@@ -1,0 +1,21 @@
+---
+layout: default
+lang: el
+title: Ετικέτες
+description: Περιήγηση σε όλα τα άρθρα του AliveGR ανά ετικέτα.
+permalink: /el/tags/
+---
+
+<section class="news-section">
+    <h2 class="section-heading">Ετικέτες</h2>
+
+    <p>Περιηγηθείτε όλα τα άρθρα ανά θέμα.</p>
+
+    <div class="tag-cloud">
+        {% for t in site.data.tags.el %}
+            {%- assign lang_posts = site.posts | where: "lang", "el" -%}
+            {%- assign tagged = lang_posts | where_exp: "post", "post.tags contains t.key" -%}
+            <a class="tag-chip" href="/el/tags/{{ t.key }}/">{{ t.label }}<span class="tag-n">{{ tagged.size }}</span></a>
+        {% endfor %}
+    </div>
+</section>

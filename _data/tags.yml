@@ -1,0 +1,39 @@
+# Tag keys (used in post front-matter) with per-language display labels.
+# Adding a new tag: add it here, then create en/tags/<key>.md and el/tags/<key>.md
+# (4 lines each, permalink /en|tags/<key>/).
+
+en:
+  - key: alivegr
+    label: "AliveGR"
+  - key: announcements
+    label: "Announcements"
+  - key: history
+    label: "History"
+  - key: releases
+    label: "Releases"
+  - key: repository
+    label: "Repository"
+  - key: subtitles
+    label: "Subtitles"
+  - key: technical
+    label: "Technical"
+  - key: testing
+    label: "Testing"
+
+el:
+  - key: alivegr
+    label: "AliveGR"
+  - key: announcements
+    label: "Ανακοινώσεις"
+  - key: history
+    label: "Ιστορία"
+  - key: releases
+    label: "Εκδόσεις"
+  - key: repository
+    label: "Αποθετήριο"
+  - key: subtitles
+    label: "Υπότιτλοι"
+  - key: technical
+    label: "Τεχνικά"
+  - key: testing
+    label: "Δοκιμές"

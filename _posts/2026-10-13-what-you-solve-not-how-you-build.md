@@ -4,6 +4,7 @@ lang: en
 title: "What You Solve Beats How You Build: Notes on Software in the Age of AI"
 date: 2026-10-13 10:00:00 +0000
 author: Twilight0
+tags: [technical, history]
 permalink: /en/news/what-you-solve-not-how-you-build/
 ---
 

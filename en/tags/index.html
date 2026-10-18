@@ -1,0 +1,21 @@
+---
+layout: default
+lang: en
+title: Tags
+description: Browse all AliveGR news posts by tag.
+permalink: /en/tags/
+---
+
+<section class="news-section">
+    <h2 class="section-heading">Tags</h2>
+
+    <p>Browse every post by topic.</p>
+
+    <div class="tag-cloud">
+        {% for t in site.data.tags.en %}
+            {%- assign lang_posts = site.posts | where: "lang", "en" -%}
+            {%- assign tagged = lang_posts | where_exp: "post", "post.tags contains t.key" -%}
+            <a class="tag-chip" href="/en/tags/{{ t.key }}/">{{ t.label }}<span class="tag-n">{{ tagged.size }}</span></a>
+        {% endfor %}
+    </div>
+</section>

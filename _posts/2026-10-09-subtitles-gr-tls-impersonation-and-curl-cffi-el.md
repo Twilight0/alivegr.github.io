@@ -4,6 +4,7 @@ lang: el
 title: "Subtitles.gr στα ενδότερα: Νεκροί πάροχοι, TLS impersonation και curl_cffi"
 date: 2026-10-09 19:00:00 +0000
 author: Twilight0
+tags: [subtitles, technical, alivegr]
 permalink: /el/news/subtitles-gr-tls-impersonation-curl-cffi/
 ---
 

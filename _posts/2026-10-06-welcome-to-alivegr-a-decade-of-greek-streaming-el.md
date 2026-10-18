@@ -4,6 +4,7 @@ lang: el
 title: "Καλώς ήρθατε στο AliveGR: Δέκα χρόνια ελληνικού streaming, πείσματος και άυπνων νυχτών"
 date: 2026-10-06 10:00:00 +0000
 author: Twilight0
+tags: [alivegr, history]
 permalink: /el/news/welcome-to-alivegr-a-decade-of-greek-streaming/
 ---
 

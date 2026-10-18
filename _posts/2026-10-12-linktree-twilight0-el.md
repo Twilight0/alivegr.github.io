@@ -4,6 +4,7 @@ lang: el
 title: "Μία σελίδα για όλα: linktr.ee/twilight0"
 date: 2026-10-12 10:00:00 +0000
 author: Twilight0
+tags: [announcements]
 permalink: /el/news/linktree-twilight0/
 ---
 

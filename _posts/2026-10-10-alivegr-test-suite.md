@@ -4,6 +4,7 @@ lang: en
 title: "Toward a Test Suite: Faster Development, Faster Debugging for AliveGR"
 date: 2026-10-10 10:00:00 +0000
 author: Twilight0
+tags: [testing, technical, alivegr]
 permalink: /en/news/alivegr-test-suite/
 ---
 

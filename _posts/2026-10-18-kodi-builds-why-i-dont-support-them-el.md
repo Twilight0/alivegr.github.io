@@ -4,6 +4,7 @@ lang: el
 title: "Kodi Builds: Γιατί δεν τα υποστηρίζω, και γιατί η εμπιστοσύνη μετράει περισσότερο από την ευκολία"
 date: 2026-10-18 12:00:00 +0000
 author: Twilight0
+tags: [announcements, technical]
 permalink: /el/news/kodi-builds-why-i-dont-support-them/
 ---
 

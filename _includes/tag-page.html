@@ -1,0 +1,26 @@
+{%- assign tag_label = page.title | remove: "Tag: " | remove: "Ετικέτα: " -%}
+{%- assign lang_posts = site.posts | where: "lang", page.lang -%}
+{%- assign tagged = lang_posts | where_exp: "post", "post.tags contains page.tag" -%}
+
+<p class="post-back"><a href="/{{ page.lang }}/tags/">&larr; {% if page.lang == 'el' %}Όλες οι ετικέτες{% else %}All tags{% endif %}</a></p>
+
+<section class="news-section">
+    <h2 class="section-heading">{% if page.lang == 'el' %}Ετικέτα:{% else %}Tag:{% endif %} {{ tag_label }}</h2>
+
+    {% if tagged.size == 0 %}
+        <p class="news-empty">{% if page.lang == 'el' %}Δεν υπάρχουν άρθρα με αυτή την ετικέτα ακόμα.{% else %}No posts with this tag yet.{% endif %}</p>
+    {% else %}
+        <p class="tag-count">{% if page.lang == 'el' %}{{ tagged.size }} άρθρα{% else %}{{ tagged.size }} post{% if tagged.size != 1 %}s{% endif %}{% endif %}</p>
+        <div class="news-grid">
+            {% for post in tagged %}
+                <div class="news-card">
+                    <a class="news-card-title" href="{{ post.url }}">{{ post.title }}</a>
+                    <span class="news-card-date">{{ post.date | date: "%b %d, %Y" }}{% if post.author %} &middot; {{ post.author }}{% endif %}</span>
+                    {% if post.excerpt %}
+                        <p class="news-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</section>

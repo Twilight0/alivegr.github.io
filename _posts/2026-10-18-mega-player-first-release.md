@@ -4,6 +4,7 @@ lang: en
 title: "MEGA Player for Kodi: The First Release"
 date: 2026-10-18 12:00:00 +0000
 author: Twilight0
+tags: [releases, announcements]
 permalink: /en/news/mega-player-first-release/
 ---
 
